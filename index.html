@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compression Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Compression Tool</h1>
+        <p class="author">MADE BY: <strong>SUNNY KUMAR</strong></p>
+
+        <input type="file" id="imageInput" accept="image/*">
+        
+        <!-- Compression Level Slider -->
+        <label for="compressionRange">Compression Level: <span id="compressionValue">70</span>%</label>
+        <input type="range" id="compressionRange" min="10" max="100" value="70">
+
+        <canvas id="canvas" style="display: none;"></canvas>
+        <button id="downloadBtn" style="display: none;">Download Compressed Image</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
